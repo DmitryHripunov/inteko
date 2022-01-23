@@ -1,0 +1,30 @@
+@import (reference) "../../less/variables.less";
+
+.adv {
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__bold-text {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__huge-text {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__text {
+    max-width: 80px;
+  }
+}
+
+@media (min-width: @m) {
+  .adv {
+  }
+}

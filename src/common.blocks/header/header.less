@@ -1,0 +1,25 @@
+@import (reference) "../../less/variables.less";
+
+.header {
+  background-color: @color-white;
+  padding: 24px 0;
+
+  &__logo {
+    display: block;
+    margin-left: 20px;
+  }
+
+  &__logo-img {
+    width: 106px;
+    height: 30px;
+  }
+
+  &__language {
+    display: none;
+  }
+}
+
+@media (min-width: @m) {
+  .header {
+  }
+}

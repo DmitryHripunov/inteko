@@ -1,0 +1,77 @@
+@import (reference) "../../less/variables.less";
+
+.texture {
+  position: relative;
+
+  &_padding-top {
+    padding-top: 24px;
+  }
+
+  &_padding-bottom {
+    padding-bottom: 18px;
+  }
+
+  &_padding-bottom-large {
+    padding-bottom: 44px;
+  }
+
+  &_left-vertical {
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      z-index: 0;
+      background-color: @color-gray-m;
+      content: "";
+      top: 0;
+      left: 10px;
+      height: 100%;
+      width: 1px;
+    }
+  }
+
+  &_top-horizontal {
+    &::after {
+      position: absolute;
+      z-index: 0;
+      background-color: @color-gray-m;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 10px;
+      height: 1px;
+      width: 10px;
+    }
+  }
+
+
+  &_bottom-horizontal {
+    overflow: hidden;
+    
+    &::before {
+      position: absolute;
+      z-index: 0;
+      background-color: @color-gray-m;
+      content: "";
+      bottom: 0;
+      left: 10px;
+      right: 0;
+      height: 1px;
+      width: 100%;
+    }
+  }
+
+  &__bottom-right {
+    position: absolute;
+    background-color: @color-gray-m;
+    bottom: 0;
+    left: 10px;
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (min-width: @m) {
+  .texture {
+  }
+}

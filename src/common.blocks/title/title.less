@@ -1,0 +1,41 @@
+@import (reference) "../../less/variables.less";
+
+.title {
+  &_h1 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  &_h2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: @color-blue-m;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  &_h3 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: @m) {
+  .title {
+    &_h1 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+
+    &_h2 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 30px;
+    }
+  }
+}
