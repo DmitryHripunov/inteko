@@ -33,17 +33,21 @@
   }
 
   &__img {
-    display: block;
-    height: 170px;
     position: relative;
+    display: block;
     z-index: 1;
+    object-fit: cover;
+    height: calc(554 / 1400 * 100vw);
+    width: 94%;
+    min-height: 170px;
+    max-height: 554px;
     
     &_top {
       margin-bottom: -38px;
     }
 
     &_bottom {
-      margin-top: -42px;
+      margin-top: -20px;
     }
 
     &_right {
@@ -55,7 +59,7 @@
     }
 
     &_large {
-      height: 204px;
+      min-height: 204px;
     }
   }
 
@@ -71,8 +75,12 @@
   }
 }
 
-@media (min-width: @m) {
+@media (min-width: @s) {
   .section {
     padding-bottom: 100px;
+
+    &__img {
+      width: 60%;
+    }
   }
 }

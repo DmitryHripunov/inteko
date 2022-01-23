@@ -5,7 +5,9 @@
   z-index: 2;
   padding: 36px 20px 40px 20px;
   background-color: @color-white;
-  max-width: 240px;
+  width: calc(554 / 1400 * 100vw);
+  min-width: 280px;
+  max-width: 550px;
 
   &_absolute-top {
     margin-top: -38px;
@@ -46,7 +48,7 @@
 		}
 }
 
-@media (min-width: @m) {
+@media (min-width: @s) {
   .sidebar {
     padding: 60px 46px 60px 60px;
     max-width: 550px;
