@@ -55,10 +55,30 @@
           </p>
         </div>
 
-        <img class="section__img section__img_left section__img_top" src="${require('./assets/img/slider-1_1.jpg')}"
-          alt="#">
+        <div class="slider js-slider">
+          <div class="swiper-container js-projects-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="section__img section__img_left" src="${require('./assets/img/slider-1_1.jpg')}" alt="#">
+              </div>
 
-        <div class="sidebar sidebar_right sidebar_middle">
+              <div class="swiper-slide">
+                <img class="section__img section__img_left" src="https://dummyimage.com/920x554/000/fff" alt="#">
+              </div>
+
+              <div class="swiper-slide">
+                <img class="section__img section__img_left" src="https://dummyimage.com/920x554/000/fff" alt="#">
+              </div>
+            </div>
+
+            <div class="slider__pagination js-projects-pagination"></div>
+
+            <div class="slider__button-prev js-projects-prev"></div>
+            <div class="slider__button-next js-projects-next"></div>
+          </div>
+        </div>
+
+        <div class="sidebar sidebar_right sidebar_middle sidebar_absolute-top">
           <h3 class="title title_h3">Среди знаковых проектов:</h3>
 
           <p class="desc">
@@ -90,8 +110,7 @@
         section_indent-bottom
         texture
         texture_left-vertical
-        texture_bottom-horizontal"
-      >
+        texture_bottom-horizontal">
         <div class="section__inner-page section__inner-page_middle">
           <h2 class="title title_h2">Интеко сейчас</h2>
 
@@ -111,15 +130,15 @@
                   <div class="adv__bold-text">
                     Более
                   </div>
-  
+
                   <div class="adv__huge-text">
                     2000
                   </div>
-  
+
                   <div class="adv__bold-text">
                     человек
                   </div>
-  
+
                   <div class="adv__text">
                     Общая численность персонала
                   </div>
@@ -129,15 +148,15 @@
                   <div class="adv__bold-text">
                     около
                   </div>
-  
+
                   <div class="adv__huge-text">
                     1,2
                   </div>
-  
+
                   <div class="adv__bold-text">
                     млн кв. м.
-                  </div>  
-  
+                  </div>
+
                   <div class="adv__text">
                     Объем текущего строительства
                   </div>
@@ -154,8 +173,7 @@
         texture_padding-bottom-large
         texture_left-vertical
         texture_top-horizontal
-        "
-      >
+        ">
         <div class="texture__bottom-right"></div>
 
         <div class="sidebar sidebar_middle">
@@ -186,7 +204,8 @@
           </ul>
         </div>
 
-        <img class="section__img section__img_right section__img_bottom" src="${require('./assets/img/adv.jpg')}" alt="#">
+        <img class="section__img section__img_right section__img_bottom" src="${require('./assets/img/adv.jpg')}"
+          alt="#">
       </div>
 
       <section class="section section_indent-top section_indent-bottom-huge">
@@ -195,19 +214,58 @@
         </div>
 
         <div class="sidebar sidebar_right sidebar_middle">
-          <h3 class="title title_h3">Обеспечение достойного уровня жизни сотрудников</h3>
+          <div class="slider js-slider">
+            <div class="swiper-container js-principles-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3 class="title title_h3">Обеспечение достойного уровня жизни сотрудников</h3>
 
-          <p class="desc">
-            «ИНТЕКО» стремится к формированию обучающей рабочей среды, в которой новые знания и опыт сотрудники получают
-            естественным путем – в рамках текущей деятельности, в процессах рабочего взаимодействия, через участие в
-            девелоперских и
-            трансформационных проектах. На внутрикорпоративных ресурсах формируется база знаний и инструментарий, с
-            помощью которых
-            сотрудники могут самостоятельно изучать интересующие их темы. В компании есть у кого учиться: представители
-            «ИНТЕКО»
-            являются авторитетными экспертами, чье мнение публикуют РБК, «Коммерсантъ», «Ведомости», ТАСС, «Интерфакс»,
-            «Строительная газета» и чьи интервью транслируют Business FM и РБК-ТВ.
-          </p>
+                  <p class="desc">
+                    «ИНТЕКО» стремится к формированию обучающей рабочей среды, в которой новые знания и опыт сотрудники
+                    получают
+                    естественным путем – в рамках текущей деятельности, в процессах рабочего взаимодействия, через
+                    участие в
+                    девелоперских и
+                    трансформационных проектах. На внутрикорпоративных ресурсах формируется база знаний и
+                    инструментарий, с
+                    помощью которых
+                    сотрудники могут самостоятельно изучать интересующие их темы. В компании есть у кого учиться:
+                    представители
+                    «ИНТЕКО»
+                    являются авторитетными экспертами, чье мнение публикуют РБК, «Коммерсантъ», «Ведомости», ТАСС,
+                    «Интерфакс»,
+                    «Строительная газета» и чьи интервью транслируют Business FM и РБК-ТВ.
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <h3 class="title title_h3">Обеспечение достойного уровня жизни сотрудников</h3>
+
+                  <p class="desc">
+                    «ИНТЕКО» стремится к формированию обучающей рабочей среды, в которой новые знания и опыт сотрудники
+                    получают
+                    естественным путем – в рамках текущей деятельности, в процессах рабочего взаимодействия, через
+                    участие в
+                    девелоперских и
+                    трансформационных проектах. На внутрикорпоративных ресурсах формируется база знаний и
+                    инструментарий, с
+                    помощью которых
+                    сотрудники могут самостоятельно изучать интересующие их темы. В компании есть у кого учиться:
+                    представители
+                    «ИНТЕКО»
+                    являются авторитетными экспертами, чье мнение публикуют РБК, «Коммерсантъ», «Ведомости», ТАСС,
+                    «Интерфакс»,
+                    «Строительная газета» и чьи интервью транслируют Business FM и РБК-ТВ.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slider__static-pagination js-principles-pagination"></div>
+              
+              <div class="slider__button-prev js-principles-prev"></div>
+              <div class="slider__button-next js-principles-next"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -215,10 +273,32 @@
         <div class="section__inner-page">
           <h2 class="title title_h2">Компания предлагает своим сотрудникам</h2>
         </div>
-        
-        <img class="section__img section__img_left section__img_top section__img_large" src="${require('./assets/img/slider-2_1.jpg')}" alt="#">
 
-        <div class="sidebar sidebar_right">
+        <div class="slider js-slider">
+          <div class="swiper-container js-offer-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="section__img section__img_left section__img_large"
+                  src="${require('./assets/img/slider-2_1.jpg')}" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img class="section__img section__img_left section__img_large"
+                  src="https://dummyimage.com/920x554/000/fff" alt="#">
+              </div>
+              <div class="swiper-slide">
+                <img class="section__img section__img_left section__img_large"
+                  src="https://dummyimage.com/920x554/000/fff" alt="#">
+              </div>
+            </div>
+
+            <div class="slider__pagination js-offer-pagination"></div>
+
+            <div class="slider__button-prev js-offer-prev"></div>
+            <div class="slider__button-next js-offer-next"></div>
+          </div>
+        </div>
+
+        <div class="sidebar sidebar_right sidebar_absolute-top">
           <ul class="sidebar__list">
             <li class="sidebar__list-item">
               работу в центре Москвы, в 1 минуте ходьбы от ст. метро «Красные ворота»
@@ -259,9 +339,11 @@
             </li>
 
             <li class="sidebar__list-item">
-              широкие возможности для совместного времяпрепровождения вне работы: спортивные и интеллектуальные игры (в
+              широкие возможности для совместного времяпрепровождения вне работы: спортивные и интеллектуальные игры
+              (в
               компании есть
-              самообразующиеся группы по футболу, бегу и интеллектуальным викторинам), корпоративные праздники, участие
+              самообразующиеся группы по футболу, бегу и интеллектуальным викторинам), корпоративные праздники,
+              участие
               в
               мероприятиях, проводимых Советом молодых специалистов строительной отрасли г. Москвы, и многое другое.
             </li>
