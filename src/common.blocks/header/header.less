@@ -16,10 +16,37 @@
 
   &__language {
     display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: url("../../assets/img/language.png") center / cover no-repeat ;
   }
 }
 
 @media (min-width: @m) {
   .header {
+    padding: 88px 0 32px 0;
+
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin-left: 60px;
+    }
+
+    &__logo-img {
+      width: 150px;
+      height: 40px;
+    }
+
+    &__language {
+      display: block;
+      margin-right: 60px;
+    }
   }
 }

@@ -1,6 +1,9 @@
 @import (reference) "../../less/variables.less";
 
 .adv {
+  display: flex;
+  grid-gap: 0 60px;
+  flex-wrap: wrap;
 
   &__item {
     &:not(:last-child) {
@@ -24,7 +27,20 @@
   }
 }
 
-@media (min-width: @m) {
+@media (min-width: @s) {
   .adv {
+    &__bold-text:not(:first-child) {
+      display: inline-block;
+    } 
+
+    &__huge-text {
+      display: inline-block;
+      font-size: 48px;
+      line-height: 42px;
+    }
+
+    &__text {
+      max-width: unset;
+    }
   }
 }

@@ -206,16 +206,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      // chunksSortMode: 'manual',
-      // chunks: ['vendor', 'common'],
+      minify: {
+        removeRedundantAttributes: false,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+      },
     }),
-    // для добавления отдельной html страницы нужно подключить новый HtmlWebpackPlugin
-    /* new HtmlWebpackPlugin({
-      template: 'src/test.html',
-      filename: 'test.html',
-      // chunksSortMode: 'manual',
-      // chunks: ['vendor', 'common'],
-    }), */
   ],
 };
 

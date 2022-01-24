@@ -11,16 +11,18 @@
 <body>
   <div class="container">
     <header class="header">
-      <a href="#" class="header__logo">
-        <img class="header__logo-img" src="${require('./assets/img/logo.png')}" alt="#">
-      </a>
-
-      <button class="header__language"></button>
+      <div class="header__row">
+        <a href="#" class="header__logo">
+          <img class="header__logo-img" src="${require('./assets/img/logo.png')}" alt="#">
+        </a>
+  
+        <button class="header__language"></button>
+      </div>
     </header>
 
     <main class="main">
       <section class="section texture texture_left-vertical">
-        <img class="section__img section__img_top section__img_right" src="${require('./assets/img/banner_1.jpg')}"
+        <img class="section__img section__img_top section__img_right section__img_desk-504" src="${require('./assets/img/banner_1.jpg')}"
           alt="#">
 
         <div class="sidebar">
@@ -56,18 +58,18 @@
         </div>
 
         <div class="slider js-slider">
-          <div class="swiper-container js-projects-swiper">
+          <div class="swiper-container slider__container js-projects-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="section__img section__img_left" src="${require('./assets/img/slider-1_1.jpg')}" alt="#">
+                <img class="section__img section__img_left section__img_desk-504" src="${require('./assets/img/slider-1_1.jpg')}" alt="#">
               </div>
 
               <div class="swiper-slide">
-                <img class="section__img section__img_left" src="https://dummyimage.com/920x554/000/fff" alt="#">
+                <img class="section__img section__img_left section__img_desk-504" src="https://dummyimage.com/920x554/000/fff" alt="#">
               </div>
 
               <div class="swiper-slide">
-                <img class="section__img section__img_left" src="https://dummyimage.com/920x554/000/fff" alt="#">
+                <img class="section__img section__img_left section__img_desk-504" src="https://dummyimage.com/920x554/000/fff" alt="#">
               </div>
             </div>
 
@@ -204,7 +206,7 @@
           </ul>
         </div>
 
-        <img class="section__img section__img_right section__img_bottom " src="${require('./assets/img/adv.jpg')}"
+        <img class="section__img section__img_right section__img_bottom section__img_desk-top-520" src="${require('./assets/img/adv.jpg')}"
           alt="#">
       </div>
 
@@ -213,7 +215,7 @@
           <h2 class="title title_h2">Основные принципы работы с персоналом</h2>
         </div>
 
-        <div class="sidebar sidebar_right sidebar_middle">
+        <div class="sidebar sidebar_right sidebar_middle sidebar_full">
           <div class="slider js-slider">
             <div class="swiper-container js-principles-swiper">
               <div class="swiper-wrapper">
@@ -269,13 +271,13 @@
         </div>
       </section>
 
-      <section class="section texture texture_top-horizontal texture_left-vertical">
+      <section class="section section_indent-bottom texture texture_top-horizontal texture_left-vertical">
         <div class="section__inner-page">
-          <h2 class="title title_h2">Компания предлагает своим сотрудникам</h2>
+          <h2 class="title title_h2 title_indent-huge">Компания предлагает своим сотрудникам</h2>
         </div>
 
         <div class="slider js-slider">
-          <div class="swiper-container js-offer-swiper">
+          <div class="swiper-container slider__container js-offer-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img class="section__img section__img_left section__img_large"
@@ -298,7 +300,7 @@
           </div>
         </div>
 
-        <div class="sidebar sidebar_right sidebar_absolute-top">
+        <div class="sidebar sidebar_right sidebar_absolute-top sidebar_transform">
           <ul class="sidebar__list">
             <li class="sidebar__list-item">
               работу в центре Москвы, в 1 минуте ходьбы от ст. метро «Красные ворота»
@@ -351,10 +353,6 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-
-    </footer>
   </div>
 </body>
 
