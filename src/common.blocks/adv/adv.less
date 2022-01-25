@@ -2,7 +2,7 @@
 
 .adv {
   display: flex;
-  grid-gap: 0 60px;
+  grid-gap: 0 10px;
   flex-wrap: wrap;
 
   &__item {
@@ -22,16 +22,22 @@
     font-weight: 700;
   }
 
-  &__text {
+  &__text-s {
     max-width: 80px;
   }
 }
 
 @media (min-width: @s) {
   .adv {
+    flex-wrap: nowrap;
+
     &__bold-text:not(:first-child) {
       display: inline-block;
     } 
+
+    &__item {
+      flex: 0 1 50%;
+    }
 
     &__huge-text {
       display: inline-block;
@@ -39,8 +45,8 @@
       line-height: 42px;
     }
 
-    &__text {
-      max-width: unset;
+    &__text-s {
+      max-width: 100%;
     }
   }
 }
